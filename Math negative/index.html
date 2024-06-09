@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.7px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+         document.write('<h2>TASK 2</h2>')
+        let numbers = parseInt(prompt("Enter a negative integer: "));
+
+        if (isNaN(number) || number >= 0) {
+            alert("Please enter a negative integer only.");
+        } else {
+            document.write("Number:", number);
+
+            let rounded = Math.round(number);
+            document.write("Round off value:", rounded);
+
+            let floored = Math.floor(number);
+            document.write("Floor value:", floored);
+
+            let ceiled = Math.ceil(number);
+            document.write("Ceil value:", ceiled);
+        }
+       
+    </script>
+</body>
+</html>

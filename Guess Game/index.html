@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.7px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.write('<h2>TASK 8</h2>')
+        let secret = Math.round(Math.random() * 50);
+        let guess = parseInt(prompt('Enter a number between 1 and 10'));
+        if (guess == secret) {
+            document.write('Congratulations! You guessed the correct number.')
+        }
+        else if (guess < secret) {
+            document.write('Your guess is too low.')
+        }
+        else if (guess > secret) {
+
+            document.write('Your guess is too high.')
+        }
+        document.write('Your Guess: ', guess, '<br>')
+        document.write('Random Number: ', secret)
+
+
+
+    </script>
+</body>
+
+</html>

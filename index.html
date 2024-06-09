@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 20px;
+            font-weight: 500;
+            font-family: sans-serif;
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin: 10px;
+            border: solid sandybrown;
+            padding: 10px;
+        }
+
+        a:hover {
+            background-color: sandybrown;
+            color: white;
+        }
+
+        div {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="Math positive/index.html">Positive Integers</a>
+        <a href="Math negative/index.html">Negative Integers</a>
+        <a href="Weight/index.html">Weight</a>
+        <a href="Guess Game/index.html">Guess Game</a>
+    </div>
+
+    <script>
+        document.write('<h2>TASK 3</h2>')
+        let absolute = Math.abs(-4);
+        document.write('The absolute value of -4 is: ', absolute);
+        document.write('<hr>')
+
+        document.write('<h2>TASK 4</h2>')
+        let a = Math.round(Math.random() * 100);
+        document.write('Random Dice value: ', a);
+        document.write('<hr>')
+
+        document.write('<h2>TASK 5</h2>')
+        var bigDecimal = Math.random();
+        //   document.write(bigDecimal);
+        var improvedNum = Math.round(bigDecimal);
+        // document.write(improvedNum);
+        if (improvedNum == 0) {
+            document.write('Tails: ', improvedNum);
+        } else {
+            document.write('Heads: ', improvedNum);
+        }
+        document.write('<hr>')
+
+        document.write('<h2>TASK 6</h2>')
+        let str = Math.round(Math.random() * 100);
+        document.write('Random number between 1 and 100: ', str);
+        document.write('<hr>')
+
+
+
+    </script>
+</body>
+
+</html>
